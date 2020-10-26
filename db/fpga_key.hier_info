@@ -1,0 +1,7 @@
+|key
+sys_clk => ~NO_FANOUT~
+sys_rst => ~NO_FANOUT~
+key => ~NO_FANOUT~
+key_val <= <GND>
+
+
