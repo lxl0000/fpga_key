@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at key.v(9): object "KEY_POSEDGE" differs only in case from object "key_posedge" in the same scope
+Info (10281): Verilog HDL Declaration information at key.v(10): object "KEY_NEGEDGE" differs only in case from object "key_negedge" in the same scope

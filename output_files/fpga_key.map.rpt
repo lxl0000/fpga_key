@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fpga_key
-Mon Oct 26 08:20:09 2020
+Tue Oct 27 08:31:59 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -10,12 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -41,20 +36,20 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 26 08:20:09 2020       ;
+; Analysis & Synthesis Status        ; Failed - Tue Oct 27 08:31:59 2020           ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; fpga_key                                    ;
 ; Top-level Entity Name              ; key                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 4                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -162,107 +157,22 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-; key.v                            ; yes             ; User Verilog HDL File  ; D:/Data/Quartus_Workspace/fpga_key/key.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-
-
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-;                                             ;         ;
-; Total combinational functions               ; 0       ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 0       ;
-;     -- 3 input functions                    ; 0       ;
-;     -- <=2 input functions                  ; 0       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 0       ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 0       ;
-;     -- Dedicated logic registers            ; 0       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 4       ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-; Maximum fan-out node                        ; sys_clk ;
-; Maximum fan-out                             ; 1       ;
-; Total fan-out                               ; 4       ;
-; Average fan-out                             ; 0.50    ;
-+---------------------------------------------+---------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |key                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |key                ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Oct 26 08:20:08 2020
+    Info: Processing started: Tue Oct 27 08:31:59 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fpga_key -c fpga_key
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file key.v
-    Info (12023): Found entity 1: key
-Info (12127): Elaborating entity "key" for the top level hierarchy
-Warning (10034): Output port "key_val" at key.v(6) has no driver
-Warning (12158): Entity "key" contains only dangling pins
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "key_val" is stuck at GND
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "sys_clk"
-    Warning (15610): No output dependent on input pin "sys_rst"
-    Warning (15610): No output dependent on input pin "key"
-Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4628 megabytes
-    Info: Processing ended: Mon Oct 26 08:20:09 2020
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Error (10170): Verilog HDL syntax error at key.v(48) near text ":";  expecting "<=", or "=" File: D:/Data/Quartus_Workspace/fpga_key/key.v Line: 48
+Error (10112): Ignored design unit "key" at key.v(1) due to previous errors File: D:/Data/Quartus_Workspace/fpga_key/key.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file key.v
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 0 warnings
+    Error: Peak virtual memory: 4607 megabytes
+    Error: Processing ended: Tue Oct 27 08:31:59 2020
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:01
 
 
