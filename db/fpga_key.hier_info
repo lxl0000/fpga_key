@@ -49,6 +49,6 @@ sys_rst => key_k0.ACLR
 sys_rst => key_next.ACLR
 key_in => key_k0.DATAIN
 key_in => key_next.DATAIN
-key_status <= key_status~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_status << key_status~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
